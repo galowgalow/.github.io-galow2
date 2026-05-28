@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>圖片展示</title>   
+    <style>
+        /* 1. 大圖顯示區 (預設隱藏) */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url("Screenshot_20250813-194438~2.jpg");
+            background-color: #000000; /* 溫暖的米色 */
+            background-repeat: no-repeat; /* 關鍵：防止圖片在螢幕太大時重複出現 */
+            background-position: center;  /* 關鍵：讓圖片永遠置中 */
+            background-attachment: fixed; /* 選填：捲動網頁時背景固定不動，很有質感 */
+        }
+        .footer-banner{
+            background-color: #0a0a0a;
+            padding: 40px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0; 
+            left: 0;
+        }
+        h1{
+            color: #fff;
+        }
+        h2 {
+            margin: 0;
+            color: #ffffff;
+        }
+        /* 2. 小圖並排容器 */
+        .gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: 180px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .gallery img:hover {
+            opacity: 0.7;
+        }
+        .btn-subscribe {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #f839ff/* YouTube 紅色 */
+            text-decoration: none;     /* 去掉超連結底線 */
+            border-radius: 50px;       /* 圓角按鈕 */
+            border: none;
+            cursor: pointer;           /* 滑鼠移上去變手指 */
+            transition: transform 0.2s, background-color 0.2s; /* 動畫效果 */
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        /* 滑鼠移上去的效果 */
+        .btn-subscribe:hover {
+            background-color: #cc0000 !important;
+            border-color: #cc0000;
+            color: rgb(255, 255, 255);
+            transform: scale(1.05);    /* 稍微變大一點 */
+        }
+
+        /* 按下去的效果 */
+        .btn-subscribe:active {
+            transform: scale(0.95);    /* 按下去縮小一點，更有真實感 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>character</h1>
+
+    <div class="gallery">
+        <img src="sticker-專心工作-transparent.png" onclick="location.href='galow4.html';">
+        <img src="Screenshot_20260423-162539~2.jpg" onclick="location.href='galow5.html';">
+        <img src="Screenshot_20250824-104822.jpg" onclick="location.href='galow6.html';">
+    </div>
+
+
+    <button class="btn-subscribe" style="background-color: #333;" onclick="location.href='galow2.html'">
+        back to menu
+    </button>
+    <div class="footer-banner">
+        <h2>make by galow_galow</h2>
+    </div>
+
+</body>
+</html>
+
+
+    
+

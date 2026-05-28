@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>訂閱我會更開心</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url("Screenshot_20250813-194438~2.jpg");
+            background-color: #000000; /* 溫暖的米色 */
+            background-repeat: no-repeat; /* 關鍵：防止圖片在螢幕太大時重複出現 */
+            background-position: center;  /* 關鍵：讓圖片永遠置中 */
+            background-attachment: fixed; /* 選填：捲動網頁時背景固定不動，很有質感 */
+        }
+        .header-banner {
+            background-color: #e359ff;
+            padding: 40px 0;
+            width: 100%;
+        }
+        .footer-banner{
+            background-color: #0a0a0a;
+            padding: 40px 0;
+            width: 100%;
+            bottom: 0; 
+            left: 0;
+        }
+
+        h1 {
+            margin: 0;
+            color: #000000;
+        }
+        
+        h2 {
+            margin: 0;
+            color: #ffffff;
+        }
+        h4 {
+            color: #ffffff;
+        }
+
+        .main-content {
+            padding: 30px;
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        /* 讓容器更整齊 */
+        .content-container {
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 增加陰影感 */
+        }
+        .btn-subscribe {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #f839ff/* YouTube 紅色 */
+            text-decoration: none;     /* 去掉超連結底線 */
+            border-radius: 50px;       /* 圓角按鈕 */
+            border: none;
+            cursor: pointer;           /* 滑鼠移上去變手指 */
+            transition: transform 0.2s, background-color 0.2s; /* 動畫效果 */
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        /* 滑鼠移上去的效果 */
+        .btn-subscribe:hover {
+            background-color: #cc0000 !important;
+            border-color: #cc0000;
+            color: rgb(255, 255, 255);
+            transform: scale(1.05);    /* 稍微變大一點 */
+        }
+
+        /* 按下去的效果 */
+        .btn-subscribe:active {
+            transform: scale(0.95);    /* 按下去縮小一點，更有真實感 */
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 360px;
+            height: 180px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .gallery img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>訂閱我會更開心</h1>
+    </div>
+
+
+
+
+    <div class="main-content">
+        
+        
+        <div class="content-container">
+            <h3>精選圖片：</h3>
+            <img src="https://yt3.googleusercontent.com/eG_nJc-onX-0iu9V2KCG8-E9PHuwi87K1iO1_iCVb51wi9Zp7PXdGlI2KnPERxAEg61eNYi-NA=s160-c-k-c0x00ffffff-no-rj">
+            <h4>歡迎來到此網頁</h4>
+
+            <button class="btn-subscribe" style="background-color: #333;" onclick="location.href='galow3.html'">
+            character
+            </button>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
+
+            <h3>兩張傻子的圖：</h3>
+
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="mqdefault_6sgif.webp">
+        <img src="mqdefault_6sgif2.webp">
+
+
+    </div>
+    <div class="footer-banner">
+        <h2>make by galow_galow</h2>
+    </div>
+
+
+</body>
+</html>
